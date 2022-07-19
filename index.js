@@ -25,7 +25,7 @@ Client.on("messageCreate", message => {
     if (message.author.bot) return;
     
     if(message.content === prefix + "ping"){
-        message.reply(`${message.guild.memberCount}`);
+        message.reply(`Nous sommes actuellement ${message.guild.memberCount} sur le serveur.`);
     }
     else if(message.content === prefix + "help"){
         const embed = new Discord.MessageEmbed()
