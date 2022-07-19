@@ -190,7 +190,6 @@ Client.on("interactionCreate", interaction => {
 //------------------- READY -------------------\\
 
 Client.on("ready", async () => {
-    Client.user.setPresence({ activities: [{ name: `${message.guild.memberCount}`, type: 'WATCHING'}] });
 
     //Client.application.commands.create(data);
     Client.guilds.cache.get("991086906316054578").commands.create(data);
