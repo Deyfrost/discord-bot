@@ -94,12 +94,6 @@ Client.on("interactionCreate", interaction => {
     };
 });
 
-Client.on("messageCreate",  message => {
-        if(message.content === prefix + "Bouton-vote"){
-            interaction.reply({content: "Vous allez être redirigé vers le lien du top serveur !", ephemeral: true});
-    }
-})
-
 //------------------- MENU DE SELECTION -------------------\\
 
 Client.on("messageCreate", message => {
