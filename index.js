@@ -24,7 +24,7 @@ var data = new SlashCommandBuilder()
 Client.on("messageCreate", message => {
     if (message.author.bot) return;
     
-    if(message.content === prefix + "ping"){
+    if(message.content === prefix + "count"){
         message.reply(`Nous sommes actuellement ${message.guild.memberCount} sur le serveur.`);
     }
     else if(message.content === prefix + "help"){
